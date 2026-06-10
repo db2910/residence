@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { useForm } from 'react-hook-form'
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
-import { pageTransitionVariants, staggerContainerVariants, staggerChildVariants, fadeUpVariants } from '../animations/motionVariants'
+import { pageTransitionVariants, staggerContainerVariants, staggerChildVariants } from '../animations/motionVariants'
 import { useInView } from '../hooks/useInView'
 
 type FormData = {

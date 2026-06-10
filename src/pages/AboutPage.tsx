@@ -59,7 +59,7 @@ function ValuesSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
-          {values.map(({ Icon, title, description }, index) => (
+          {values.map(({ Icon, title, description }) => (
             <motion.div
               key={title}
               className="flex gap-6 group"

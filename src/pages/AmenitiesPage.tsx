@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Flag, Waves, Dumbbell, Building, Sparkles, Trees, Bell, Smartphone } from 'lucide-react'
 import { amenities } from '../data'
-import { pageTransitionVariants, staggerContainerVariants, fadeUpVariants } from '../animations/motionVariants'
+import { pageTransitionVariants } from '../animations/motionVariants'
 import { useInView } from '../hooks/useInView'
 
 const iconMap: Record<string, React.ElementType> = {

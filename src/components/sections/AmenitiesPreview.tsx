@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Waves, Dumbbell, Car, Bell, Flag, Users, Infinity } from 'lucide-react'
 import { useInView } from '../../hooks/useInView'
-import { useCounter } from '../../hooks/useCounter'
 import { staggerContainerVariants, staggerChildVariants } from '../../animations/motionVariants'
 
 const features = [
@@ -14,19 +13,6 @@ const features = [
   { icon: Users, title: 'Managed Community', desc: 'Professional estate management and maintenance.' },
 ]
 
-function CounterStat({ end, label, prefix = '', suffix = '', start }: {
-  end: number; label: string; prefix?: string; suffix?: string; start: boolean
-}) {
-  const count = useCounter(end, 2200, start)
-  return (
-    <div className="text-center">
-      <div className="font-playfair text-gold font-bold leading-none text-5xl md:text-6xl">
-        {prefix}{count}{suffix}
-      </div>
-      <span className="stat-label mt-3">{label}</span>
-    </div>
-  )
-}
 
 export default function AmenitiesPreview() {
   const { ref, isInView } = useInView({ threshold: 0.15 })

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Home, BedDouble } from 'lucide-react'
 import { useInView } from '../../hooks/useInView'
-import { staggerContainerVariants, staggerChildVariants, fadeUpVariants } from '../../animations/motionVariants'
+import { staggerContainerVariants, staggerChildVariants } from '../../animations/motionVariants'
 import { residences } from '../../data'
 
 const iconMap: Record<string, React.ReactNode> = {
