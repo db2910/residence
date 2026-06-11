@@ -100,7 +100,7 @@ export const amenities = [
     title: 'Swimming Pool',
     icon: 'waves',
     description: 'Resort-style heated swimming pool with sun deck, cabanas, and dedicated lounging areas. Perfect for relaxation year-round.',
-    image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1540541338537-71cf83b23bdf?w=800&q=80',
   },
   {
     id: 'gym',
@@ -114,7 +114,7 @@ export const amenities = [
     title: 'Club House',
     icon: 'building',
     description: 'An exclusive residents\' club featuring dining, a private bar, meeting rooms, and event spaces designed for sophisticated entertaining.',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800&q=80',
   },
   {
     id: 'spa',

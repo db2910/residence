@@ -25,9 +25,9 @@ const contactInfo = [
   {
     Icon: Mail,
     label: 'Email Us',
-    value: 'Info@hanningtongolfresidence.rw',
+    value: 'Info@harringtongolfresidence.rw',
     subtext: 'We respond within 24 hours',
-    href: 'mailto:Info@hanningtongolfresidence.rw',
+    href: 'mailto:Info@harringtongolfresidence.rw',
   },
   {
     Icon: MapPin,

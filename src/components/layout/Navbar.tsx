@@ -250,7 +250,7 @@ export default function Navbar() {
                 Enquire Now
               </button>
               <div className="mt-6 space-y-1">
-                <p className="font-poppins text-xs text-white/50 tracking-wide">Info@hanningtongolfresidence.rw</p>
+                <p className="font-poppins text-xs text-white/50 tracking-wide">Info@harringtongolfresidence.rw</p>
                 <p className="font-poppins text-xs text-white/50 tracking-wide">+250 792 053 090</p>
               </div>
             </div>
