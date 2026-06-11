@@ -59,8 +59,8 @@ export const residences = [
   {
     id: 'four-bedroom',
     type: '4-Bedroom Residence',
-    tag: 'Limited Availability',
-    tagStyle: 'limited',
+    tag: 'Sold Out',
+    tagStyle: 'soldout',
     bedrooms: 4,
     bathrooms: 4,
     area: 'From 195 m²',

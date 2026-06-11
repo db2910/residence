@@ -31,8 +31,10 @@ function ResidenceSection({ residence, index, onBookViewing }: { residence: any,
                 loading="lazy"
               />
               <div className={`absolute top-6 left-6 px-4 py-1.5 ${
-                residence.tagStyle === 'available' 
-                  ? 'bg-gold/90 text-navy-primary' 
+                residence.tagStyle === 'available'
+                  ? 'bg-gold/90 text-navy-primary'
+                  : residence.tagStyle === 'soldout'
+                  ? 'bg-red-800/90 text-white'
                   : 'bg-navy-primary/90 text-gold border border-gold/40'
               }`}>
                 <span className="font-poppins text-[10px] font-bold uppercase tracking-wide">
@@ -107,17 +109,25 @@ function ResidenceSection({ residence, index, onBookViewing }: { residence: any,
             </motion.div>
 
             <motion.div className="flex flex-col sm:flex-row gap-4" variants={staggerChildVariants}>
-              <button onClick={onBookViewing} className="btn-primary justify-center flex-1">
-                Book A Viewing
-                <ArrowRight size={14} />
-              </button>
-              <button 
-                className="btn-outline-dark justify-center flex-1"
-                onClick={() => alert('Brochure download will begin shortly.')}
+              {residence.tagStyle !== 'soldout' ? (
+                <button onClick={onBookViewing} className="btn-primary justify-center flex-1">
+                  Book A Viewing
+                  <ArrowRight size={14} />
+                </button>
+              ) : (
+                <div className="btn-primary justify-center flex-1 opacity-50 cursor-not-allowed" style={{ pointerEvents: 'none' }}>
+                  Sold Out
+                </div>
+              )}
+              <a
+                href={residence.brochure || '#'}
+                download
+                className="btn-outline-dark justify-center flex-1 flex items-center gap-2"
+                onClick={!residence.brochure ? (e) => { e.preventDefault(); alert('Brochure coming soon.') } : undefined}
               >
                 Download Brochure
                 <Download size={14} />
-              </button>
+              </a>
             </motion.div>
           </div>
         </div>

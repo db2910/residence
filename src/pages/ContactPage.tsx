@@ -18,16 +18,16 @@ const contactInfo = [
   {
     Icon: Phone,
     label: 'Call Us',
-    value: '+250 788 000 000',
-    subtext: 'Mon – Sat, 8am – 6pm CAT',
-    href: 'tel:+250788000000',
+    value: '+250 792 053 090',
+    subtext: 'Mon – Sat, 8am – 6pm EAT',
+    href: 'tel:+250792053090',
   },
   {
     Icon: Mail,
     label: 'Email Us',
-    value: 'info@harringtongolf.rw',
+    value: 'Info@hanningtongolfresidence.rw',
     subtext: 'We respond within 24 hours',
-    href: 'mailto:info@harringtongolf.rw',
+    href: 'mailto:Info@hanningtongolfresidence.rw',
   },
   {
     Icon: MapPin,

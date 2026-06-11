@@ -12,8 +12,8 @@ const footerLinks = {
   'Residences': [
     { label: '2-Bedroom Apartments', path: '/residences' },
     { label: '3-Bedroom Apartments', path: '/residences' },
-    { label: '4-Bedroom Penthouses', path: '/residences' },
-    { label: 'Floor Plans', path: '/residences' },
+    { label: 'Penthouse', path: '/penthouse' },
+    { label: 'Available Units', path: '/available-units' },
     { label: 'Book a Viewing', path: '/contact' },
   ],
 }
@@ -90,14 +90,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={14} className="text-gold shrink-0" />
-                <a href="tel:+250788000000" className="font-inter text-white/50 text-sm hover:text-white transition-colors">
-                  +250 788 000 000
+                <a href="tel:+250792053090" className="font-inter text-white/50 text-sm hover:text-white transition-colors">
+                  +250 792 053 090
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={14} className="text-gold shrink-0" />
-                <a href="mailto:info@harringtongolf.rw" className="font-inter text-white/50 text-sm hover:text-white transition-colors">
-                  info@harringtongolf.rw
+                <a href="mailto:Info@hanningtongolfresidence.rw" className="font-inter text-white/50 text-sm hover:text-white transition-colors">
+                  Info@hanningtongolfresidence.rw
                 </a>
               </li>
             </ul>
